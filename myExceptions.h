@@ -37,4 +37,20 @@ class illegalParameterValues
     string message;
 };
 
+class matrixSizeMismatch
+{
+  public:
+    matrixSizeMismatch(string theMessage = "The size of the two matrics doesn't match")
+    {
+        messages = theMessage;
+    }
+    void outputMessage()
+    {
+        cout << messages << endl;
+    }
+
+  private:
+    string messages;
+};
+
 #endif
