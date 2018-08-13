@@ -60,7 +60,7 @@ void heap<T>::push(const T &theElement)
 
     int currentNode = ++heapSize;
 
-    while (currentNode != 1 && theElement > heapArr[currentNode / 2])
+    while (currentNode > 1 && theElement > heapArr[currentNode / 2])
     {
         heapArr[currentNode] = heapArr[currentNode / 2];
         currentNode /= 2;
